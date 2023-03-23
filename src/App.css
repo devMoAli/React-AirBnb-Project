@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  cursor: default;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navImg {
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navImg img {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+  width: 30%;
+  max-width: 100px;
+}
+
+.gallery-img {
+  display: block;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 800px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 2.0rem;
+  line-height: 110%;
+  color: rgb(238, 131, 17);
+  margin-left: 1rem;
+}
+
+.titleP {
+  font-weight: 300;
+  font-size: 1.0rem;
+  line-height: 110%;
+  color: #222;
+  margin: 1rem;
+}
+
+.cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  overflow: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.cards section {
+  margin-left: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cardContainer {
+  position: relative;
+}
+
+.cardImg {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 1rem;
+}
+
+.cardStatus {
+  position: absolute;
+  top: 0.8rem;
+  left: 1rem;
+  background-color: #fff;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  font-weight: bold;
+  width: 7rem;
+  font-size: 0.8rem;
+}
+
+.cardInfo {
+  line-height: 145%;
+  font-size: 1rem;
+}
+
+.starIcon {
+  width: 1rem;
+  margin-right: 0.2rem;
+}
+.cardRating {
+  font-size: 15px;
+}
+.cardRating span {
+  color: #918e9b;
+  margin-left: 0.2rem;
+  font-size: 15px;
+}
+
+.cardTitle, .cardDesc  {
+  font-size: 0.8rem;
+}
+
+.cardPrice {
+  margin-bottom: 0.8rem;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  color: rgb(243, 130, 8);
 }
