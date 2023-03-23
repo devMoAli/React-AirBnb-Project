@@ -1,1 +1,1 @@
-#### AirBnb Scrimba first static project 
+#### AirBnb Scrimba first project 
